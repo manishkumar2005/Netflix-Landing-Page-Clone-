@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5% !important;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: #999999;
+}
+
+/* ****************************** */
+
+/* .margin{
+    width: 120rem;
+    margin: auto;
+    border: 2px solid red;
+} */
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+}
+
+.showcase-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding: 2rem 3.4rem;
+}
+
+.logo{
+    width: 14rem;
+}
+.btn{
+    display: inline-block; 
+    padding: 1rem 1.6rem;
+    background-color: #e50914;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.main-heading{
+    font-weight: 700;
+    font-size: 7rem;
+    margin: 0 30px;
+    max-width: 800px;
+    line-height: 74.5px;
+    text-align: center;
+    letter-spacing: -4.8px;
+    color: #fff;
+}
+
+.secoundary-heading{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.8rem 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.tursery{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+.searchbox{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0;
+    justify-content: center;
+    margin: 0 11rem;
+}
+
+#mail{
+    font-size: 1.4rem;
+    padding: 1.5rem;
+}
+.btn-lg{
+text-align: center;
+}
+
+/* section Starts here */
+
+.card-0{
+    display: grid;
+    grid-template-columns: 50% 40%;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 45px 40px;
+    border-top: 8px rgb(69, 69, 69) solid;
+}
+
+.card-1{
+    grid-template-columns: 40% 50%;
+}
+
+.card-1 img{
+    width: 90%;
+}
+
+.desc-0 h1{
+    font-size: 5rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.desc-0 p{
+    font-size: 2rem;
+    color: #fff;
+}
+.card-0 img{
+    width: 80%;
+}
+
+.bottom{
+    border-bottom: 8px rgb(69, 69, 69) solid;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .card-0{
+    display: grid;
+    grid-template-columns: 50% 40%;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 45px 40px;
+    border-top: 8px rgb(69, 69, 69) solid;
+}
+
+.card-1{
+    grid-template-columns: 40% 50%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  media*/
+@media(max-width:80rem){
+    .main-heading{
+        font-weight: 700;
+        font-size: 5rem;
+        letter-spacing: 0;
+        padding: 0 7rem;
+    }
+    .showcase-content{
+        gap: 0.7rem;
+    }
+    .logo{
+        width: 12rem;
+    }
+    .btn{
+        padding: 0.9rem 1.4rem;
+   }
+   .card-0{
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    /* gap: 1rem; */
+   }
+   .card-1{
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+   .desc-0 h1{
+    font-size: 4rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.desc-0 p{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.grid{
+    padding-top: 5rem;
+}
+}
+
+@media(max-width:50rem){
+    .searchbox{
+        grid-template-columns: 1fr;
+        gap: 1rem; 
+        margin: 0 8rem;
+    }
+    .btn-lg{
+        display: inline-block;
+        align-self: center;
+        justify-self: center;
+    }
+    .secoundary-heading{
+        font-size: 2.4rem;
+        font-weight: 300;
+    }
+    .tursery{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0 11rem;
+
+    }
+    .showcase{
+        padding: 2rem;
+    }
+    .main-heading{
+        line-height: 1.2;
+    }
+    .logo{
+        width: 11rem;
+    }
+}
+
+@media(max-width:40rem){
+    .main-heading{
+        font-size: 4rem;
+        letter-spacing: 1.1px;
+        padding: 0 7rem;
+    }
+    .searchbox{
+        grid-template-columns: 1fr;
+        gap: 1rem; 
+        margin: 0 8rem;
+    }
+}
+
+@media(max-width:35rem){
+    .main-heading{
+        font-size: 3.8rem;
+        letter-spacing: 1.1px;
+        padding: 0 3rem;
+    }
+    .searchbox{
+        grid-template-columns: 1fr;
+        gap: 1rem; 
+        margin: 0 8rem;
+    }
+    .tursery{
+        margin: 0 7rem;
+    }
+    .logo{
+        width: 10rem;
+    }
+}
+
+@media(max-width:30rem){
+    .main-heading{
+        font-size: 3rem;
+        letter-spacing: 1.1px;
+        padding: 0 2rem;
+    }
+    .searchbox{
+        grid-template-columns: 1fr;
+        gap: 1rem; 
+        margin: 0 8rem;
+    }
+    .tursery{
+        margin: 0 2em;
+    }
+    .searchbox{
+        grid-template-columns: 1fr;
+        gap: 1rem; 
+        margin: 0 2rem;
+    }
+    .logo{
+        width: 9rem;
+    }
+
+
+   
+       .desc-0 h1{
+        font-size: 3rem;
+        color: #fff;
+        padding-bottom: 1rem;
+    }
+    
+    .desc-0 p{
+        font-size: 1.6rem;
+        color: #fff;
+    }
+    .grid{
+        padding-top: 4rem;
+    }
+}
+
+.footer{
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer ,
+.footer a{
+    color: #999999;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;
+}
+
+.footer ul  li{
+    line-height: 2.4;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.footer-cols ul{
+    list-style: none;
+    color: #ffffff;
+    /* font-size: 5rem; */
+}
+
